@@ -1,0 +1,3 @@
+[submodule "specs"]
+	path = specs
+	url = https://gitlab.fftech.info/technology/specs.git
