@@ -1,8 +1,8 @@
-# Credit Evaluation
+# ATM Machine
 
 ## Description
 
-An .NET Core api for Credit Evaluation and Client and Loans database.
+An .NET Core api for a ATM Machine software, to deal with CLients, Bills and Withdraws registers.
 
 ## Table of Contents
 
@@ -20,14 +20,14 @@ Before starting, ensure you have the following installed:
 
 ## Setting Up the Database
 
-1. **Create Database**: On your local Sql Server create a new database called 'CreditDatabase' and on the Infrastructure layer execute 'update-database' , this will execute the migration script and create the tables on your local environment
+1. **Create Database**: On your local Sql Server create a new database called 'ATMMachine' and on the Infrastructure layer execute 'update-database' , this will execute the migration script and create the tables on your local environment, the database is set up to start with 10 bills registered
 
 2. **Connection String**: Update the connection string in `appsettings.json` or `appsettings.Development.json` with your SQL Server details.
 
     ```json
     {
       "ConnectionStrings": {
-        "DefaultConnection": "Data Source=.;Initial Catalog=CreditDatabase;Integrated Security=True;"
+        "DefaultConnection": "Data Source=.;Initial Catalog=ATMMachine;Integrated Security=True;"
       },
       // ...
     }
